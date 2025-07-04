@@ -20,7 +20,7 @@ This monorepo serves as a centralized hub for various C++ projects. It leverages
 ## Repository Structure
 
 ```sh
-cpp-repo/
+cpp/
 ├── apps/
 │   ├── blog-cli/
 │   │   ├── CMakeLists.txt
@@ -81,17 +81,17 @@ This monorepo hosts several applications, libraries, and tools.
 
 ### Applications
 
-- **[HTTP Server](https://github.com/dunamismax/cpp/blob/main/cpp-repo/apps/http-server/src/main.cpp)**: A lightweight, asynchronous HTTP server built with **cpp-httplib**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
-- **[Weather CLI](https://github.com/dunamismax/cpp/blob/main/cpp-repo/apps/weather-cli/src/main.cpp)**: A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set as an environment variable.
-- **[Blog Post Generator](https://github.com/dunamismax/cpp/blob/main/cpp-repo/apps/blog-cli/src/main.cpp)**: A command-line application for generating simple markdown blog posts from a template. It leverages the `markdown-generator` library to create the post content.
+- **[HTTP Server](https://github.com/dunamismax/cpp/blob/main/cpp/apps/http-server/src/main.cpp)**: A lightweight, asynchronous HTTP server built with **cpp-httplib**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
+- **[Weather CLI](https://github.com/dunamismax/cpp/blob/main/cpp/apps/weather-cli/src/main.cpp)**: A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set as an environment variable.
+- **[Blog Post Generator](https://github.com/dunamismax/cpp/blob/main/cpp/apps/blog-cli/src/main.cpp)**: A command-line application for generating simple markdown blog posts from a template. It leverages the `markdown-generator` library to create the post content.
 
 ### Libraries
 
-- **[Markdown Generator](https://github.com/dunamismax/cpp/blob/main/cpp-repo/libs/markdown-generator/src/lib.h)**: A reusable library for creating markdown content. It provides a `Post` struct and a function to generate a formatted markdown string from post data.
+- **[Markdown Generator](https://github.com/dunamismax/cpp/blob/main/cpp/libs/markdown-generator/src/lib.h)**: A reusable library for creating markdown content. It provides a `Post` struct and a function to generate a formatted markdown string from post data.
 
 ### Tools
 
-- **[Link Checker](https://github.com/dunamismax/cpp/blob/main/cpp-repo/tools/link-checker/src/main.cpp)**: A developer tool that scans markdown files and checks for broken or invalid URLs, helping to ensure the quality of documentation and blog posts.
+- **[Link Checker](https://github.com/dunamismax/cpp/blob/main/cpp/tools/link-checker/src/main.cpp)**: A developer tool that scans markdown files and checks for broken or invalid URLs, helping to ensure the quality of documentation and blog posts.
 
 ---
 
@@ -101,11 +101,11 @@ This project uses **CMake** to compile and run all projects in the workspace.
 
 ### Build All Crates
 
-To build all applications and libraries, run the `cmake` and `make` commands from the `cpp-repo/build` directory.
+To build all applications and libraries, run the `cmake` and `make` commands from the `cpp/build` directory.
 
 ```bash
 # Configure and build for development
-cd cpp-repo/build
+cd cpp/build
 cmake ..
 make
 
@@ -116,7 +116,7 @@ make
 
 ### Run Applications
 
-Once built, you can run the applications from the `cpp-repo/build` directory.
+Once built, you can run the applications from the `cpp/build` directory.
 
 ```bash
 # Run the HTTP server
@@ -140,7 +140,7 @@ export OPENWEATHERMAP_API_KEY="your_api_key"
 To remove all compiled files and build artifacts, run:
 
 ```bash
-cd cpp-repo/build
+cd cpp/build
 make clean
 ```
 
