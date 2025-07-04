@@ -101,15 +101,18 @@ This project uses **CMake** to compile and run all projects in the workspace.
 
 ### Build All Crates
 
-To build all applications and libraries, run the `cmake` and `make` commands from the `cpp/build` directory.
+To build all applications and libraries, run the `cmake` and `make` commands from the project root, after creating and navigating into the `build` directory.
 
 ```bash
 # Configure and build for development
-cd cpp/build
+mkdir build
+cd build
 cmake ..
 make
 
 # Configure and build for production
+mkdir build
+cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```

@@ -1,8 +1,23 @@
-# C++
-# Ignore build artifacts and dependencies.
-build/
+# General
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+*~
+*.swp
+*.swo
 
-# Ignore object files, libraries, and executables
+# C++ and CMake
+build/
+bin/
+obj/
 *.o
 *.obj
 *.a
@@ -12,16 +27,43 @@ build/
 *.dll
 *.exe
 *.out
-
-# Ignore CMake-generated files
+*.gch
+*.pch
+*.ipch
+*.ilk
+*.pdb
+*.idb
+*.sbr
+*.bsc
+*.res
+*.aps
+*.ncb
+*.suo
+*.user
+*.vcproj.user
+*.vcxproj.user
+*.filters
+*.sln.ide
+*.vs/
+*.cmake/
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 CTestTestfile.cmake
+DartConfiguration.tcl
+Testing/
+_CPack_Packages/
+install/
 
-# Ignore editor-specific files.
-.idea/
-.vscode/
+# Dependency management (e.g., Conan, vcpkg)
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conan_deps/
+conanfile.lock
+conan.lock
+vcpkg_installed/
+
+# IDE specific files
 *.sublime-workspace
 *.sublime-project
 *.iml
@@ -29,29 +71,21 @@ CTestTestfile.cmake
 *.iws
 *.code-workspace
 
-# Ignore OS-specific files.
-.DS_Store
+# macOS specific
 .AppleDouble
 .LSOverride
 .Spotlight-V100
 .Trashes
 ._*
+
+# Windows specific
 Thumbs.db
 ehthumbs.db
+Desktop.ini
 
-# Ignore environment files.
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Ignore log files.
-*.log
-
-# Ignore temporary files.
-*.tmp
+# Linux specific
 *.swp
-*~
-*.bak
 *.swo
+*.bak
+*~
+# End of .gitignore
