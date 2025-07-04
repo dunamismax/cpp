@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++ Monorepo logo" width="250"/>
+  <img src="https://github.com/dunamismax/cpp/blob/90921f413d8f01dfdb70f7d5bb78ae81f121468c/LLVMWyvernSmall.png" alt="C++ Monorepo logo" width="250"/>
 </p>
 
 Welcome to my C++ Monorepo. This repository centralizes diverse C++ applications and libraries, designed for efficient, scalable, and maintainable project management using CMake.
