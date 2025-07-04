@@ -1,41 +1,57 @@
-# Prerequisites
-*.d
+# C++
+# Ignore build artifacts and dependencies.
+build/
 
-# Compiled Object files
-*.slo
-*.lo
+# Ignore object files, libraries, and executables
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
+*.a
+*.lib
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
-*.app
 
-# debug information files
-*.dwo
+# Ignore CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+
+# Ignore editor-specific files.
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.iml
+*.ipr
+*.iws
+*.code-workspace
+
+# Ignore OS-specific files.
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+Thumbs.db
+ehthumbs.db
+
+# Ignore environment files.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore log files.
+*.log
+
+# Ignore temporary files.
+*.tmp
+*.swp
+*~
+*.bak
+*.swo
