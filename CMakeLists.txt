@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.15)
-project(cpp-monorepo)
+project(cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
 
+# --- Existing Dependencies ---
 FetchContent_Declare(
   cxxopts
   GIT_REPOSITORY https://github.com/jarro2783/cxxopts.git

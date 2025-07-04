@@ -15,6 +15,10 @@ Welcome to my C++ Monorepo. This repository centralizes diverse C++ applications
 
 This monorepo serves as a centralized hub for various C++ projects. It leverages CMake to manage multiple projects within a single repository, ensuring consistent dependency management and simplified build processes.
 
+### Target Architectures
+
+All code in this repository primarily targets **macOS (Clang, ARM64/AArch64 - M4 Pro)** for development, testing, and execution. **Linux (x86_64)** is a secondary target.
+
 ---
 
 ## Repository Structure
