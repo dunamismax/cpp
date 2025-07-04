@@ -52,29 +52,6 @@ cpp/
 
 ---
 
-## Quick Start
-
-To get started, clone the repository, build the projects, and run an application.
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/dunamismax/cpp.git
-cd cpp
-
-# 2. Configure the project with CMake
-mkdir build
-cd build
-cmake ..
-
-# 3. Build all projects in the workspace
-make
-
-# 4. Run an application (e.g., the http-server)
-./apps/http-server/http-server
-```
-
----
-
 ## Projects Overview
 
 This monorepo hosts several applications, libraries, and tools.
