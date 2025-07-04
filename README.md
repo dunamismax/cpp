@@ -5,7 +5,7 @@
 Welcome to my C++ Monorepo. This repository centralizes diverse C++ applications and libraries, designed for efficient, scalable, and maintainable project management using CMake.
 
 [![Language: C++](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)](https://isocpp.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dunamismax/cpp/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dunamismax/cpp/blob/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/dunamismax/cpp/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/dunamismax/cpp)](https://github.com/dunamismax/cpp/stargazers)
 
@@ -81,17 +81,17 @@ This monorepo hosts several applications, libraries, and tools.
 
 ### Applications
 
-- **[HTTP Server](https://github.com/dunamismax/cpp/blob/main/cpp/apps/http-server/src/main.cpp)**: A lightweight, asynchronous HTTP server built with **cpp-httplib**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
-- **[Weather CLI](https://github.com/dunamismax/cpp/blob/main/cpp/apps/weather-cli/src/main.cpp)**: A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set as an environment variable.
-- **[Blog Post Generator](https://github.com/dunamismax/cpp/blob/main/cpp/apps/blog-cli/src/main.cpp)**: A command-line application for generating simple markdown blog posts from a template. It leverages the `markdown-generator` library to create the post content.
+- **[HTTP Server](https://github.com/dunamismax/cpp/blob/apps/http-server/src/main.cpp)**: A lightweight, asynchronous HTTP server built with **cpp-httplib**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
+- **[Weather CLI](https://github.com/dunamismax/cpp/blob/apps/weather-cli/src/main.cpp)**: A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set as an environment variable.
+- **[Blog Post Generator](https://github.com/dunamismax/cpp/blob/apps/blog-cli/src/main.cpp)**: A command-line application for generating simple markdown blog posts from a template. It leverages the `markdown-generator` library to create the post content.
 
 ### Libraries
 
-- **[Markdown Generator](https://github.com/dunamismax/cpp/blob/main/cpp/libs/markdown-generator/src/lib.h)**: A reusable library for creating markdown content. It provides a `Post` struct and a function to generate a formatted markdown string from post data.
+- **[Markdown Generator](https://github.com/dunamismax/cpp/blob/libs/markdown-generator/src/lib.h)**: A reusable library for creating markdown content. It provides a `Post` struct and a function to generate a formatted markdown string from post data.
 
 ### Tools
 
-- **[Link Checker](https://github.com/dunamismax/cpp/blob/main/cpp/tools/link-checker/src/main.cpp)**: A developer tool that scans markdown files and checks for broken or invalid URLs, helping to ensure the quality of documentation and blog posts.
+- **[Link Checker](https://github.com/dunamismax/cpp/blob/tools/link-checker/src/main.cpp)**: A developer tool that scans markdown files and checks for broken or invalid URLs, helping to ensure the quality of documentation and blog posts.
 
 ---
 
